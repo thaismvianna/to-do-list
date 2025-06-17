@@ -114,36 +114,42 @@ body {
     }
 }
 
-/*telas pequenas */
+/* telas pequenas */
 @media (max-width: 480px) {
     .container {
         padding: 15px;
         margin-top: 10px;
     }
-    
+
     .input-container {
         flex-direction: column;
     }
-    
-    .input-task, .add-task {
+
+    .input-task,
+    .add-task {
         width: 100%;
         height: 45px;
         font-size: 16px;
     }
-    
+
     .task {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px;
+        flex-direction: row;
+        align-items: center;
+        padding: 12px 15px;
     }
-    
+
     .task-content {
-        margin: 10px 0;
-        width: 100%;
+        margin: 0 10px 0 0;
+        width: auto;
     }
-    
+
     .task-actions {
-        align-self: flex-end;
+        align-self: center;
+        margin-left: auto;
+    }
+
+    .task img {
+        height: 22px;
     }
 }
 
@@ -151,5 +157,14 @@ body {
     .add-task {
         font-size: 14px;
         padding: 0 10px;
+    }
+
+    /* telas muito pequenas */
+    .task {
+        padding: 10px 12px;
+    }
+
+    .task-actions {
+        gap: 8px;
     }
 }
